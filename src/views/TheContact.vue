@@ -1,5 +1,5 @@
 <template>
-  <div>Home</div>
+  <div>Contact</div>
   <fa :icon=" ['fab', 'facebook'] "/>
   <fa :icon=" ['fab', 'telegram'] "/>
   <fa :icon=" ['fab', 'instagram'] "/>

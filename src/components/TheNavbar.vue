@@ -40,41 +40,12 @@
 			</div>
 			<div class="navbar">
 				<ul v-show="!mobile" class="navigation">
-					<li>
-						<router-link
-						v-bind:class="{ active: isActive[0] }" 
-						@click="handleClick(0)"
-						to="/"><span>Bosh Sahifa</span></router-link>
-					</li>
-					<li>
-						<router-link
-						v-bind:class="{ active: isActive[1] }"
-						@click="handleClick(1)" 
-						to="/about"><span></span>Biz Haqimizda</router-link>
-					</li>
-					<li>
-						<router-link
-						v-bind:class="{ active: isActive[2] }"
-						@click="handleClick(2)"
-						to="/about"><span></span>Yangiliklar</router-link>
-					</li>
-					<li>
-						<router-link
-						v-bind:class="{ active: isActive[3] }"
-						@click="handleClick(3)"
-						to="/student"><span></span>Talabalar</router-link>
-					</li>
-					<li>
+					<li v-for="(item, i) in items"
+						:key="i">
 						<router-link 
-						v-bind:class="{ active: isActive[4] }"
-						@click="handleClick(4)"
-						to="/teacher"><span></span>O'qutuvchilar</router-link>
-					</li>
-					<li>
-						<router-link 
-						v-bind:class="{ active: isActive[5] }"
-						@click="handleClick(5)"
-						to="/contact"><span></span>Bog'lanish</router-link>
+						v-bind:class="{ active: i === isActive}"
+						@click="handleClick(i)"
+						:to="item.route"><span>{{ item.message }}</span></router-link>
 					</li>
 				</ul>
 				<div @click="toggleMobileNav" v-show="mobile" class="burger" :class="{'icon-active': mobileNav}">
@@ -85,41 +56,12 @@
 			</div>
 			<transition name="mobile-nav">
 				<ul v-show="mobileNav" class="dropdawn-nav">
-					<li>
+					<li v-for="(item, i) in items"
+						:key="i">
 						<router-link class="link"
-						v-bind:class="{ active: isActive[0] }" 
-						@click="handleClick(0)"
-						to="/">Bosh Sahifa</router-link>
-					</li>
-					<li>
-						<router-link class="link"
-						v-bind:class="{ active: isActive[1] }" 
-						@click="handleClick(1)"
-						to="/about">Biz Haqimizda</router-link>
-					</li>
-					<li>
-						<router-link class="link" 
-						v-bind:class="{ active: isActive[2] }" 
-						@click="handleClick(2)"
-						to="/teacher">Yangiliklar</router-link>
-					</li>
-					<li>
-						<router-link class="link" 
-						v-bind:class="{ active: isActive[3] }" 
-						@click="handleClick(3)"
-						to="/student">Talabalar</router-link>
-					</li>
-					<li>
-						<router-link class="link" 
-						v-bind:class="{ active: isActive[4] }" 
-						@click="handleClick(4)"
-						to="/teacher">O'qutuvchilar</router-link>
-					</li>
-					<li>
-						<router-link class="link" 
-						v-bind:class="{ active: isActive[5] }" 
-						@click="handleClick(5)"
-						to="/contact">Aloqa</router-link>
+						v-bind:class="{ active: i === isActive}"
+						@click="handleClick(i)"
+						:to="item.route"><span>{{ item.message }}</span></router-link>
 					</li>
 				</ul>
 			</transition>
@@ -134,10 +76,18 @@ export default {
   components: {},
 	data () {
 		return {
-			isActive: [0, 0, 0, 0, 0],
+			isActive: [0],
 			mobile: 0,
 			mobileNav: 1,
 			windowWidth: null,
+			items: [
+				{ message: 'Bosh Sahifa', route: '/' }, 
+				{ message: 'Biz Haqimizda', route: '/about' }, 
+				{ message: 'Yangiliklar', route: '/news' }, 
+				{ message: 'Talabalar', route: '/student' }, 
+				{ message: "O'qutuvchilar", route: '/teacher' }, 
+				{ message: "Bog'lanish", route: '/contact' }
+			],
 		}
 	},
 	created () {
@@ -145,11 +95,13 @@ export default {
     this.updateWidth()
   },
 	methods: {
-    handleClick (numb) {
-			for (let index = 0; index < 6; index++) {
-				this.isActive[index] = 0
-			}
-			this.isActive[numb] = 1
+    handleClick (i) {
+			// for (let index = 0; index < 6; index++) {
+			// 	this.isActive[index] = 0
+			// }
+			// this.isActive[numb] = 1
+			// console.log(numb);
+			this.isActive = i
     },
 		updateWidth () {
       this.windowWidth = window.innerWidth

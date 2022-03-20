@@ -356,7 +356,7 @@ export default {
 
 	nav {
 		height: 90px;
-		background: rgba(255, 255, 255, 0.85);
+		background: rgba(240, 242, 247, 0.7);
 		// background: #fff;
 		display: flex;
 		justify-content: center;

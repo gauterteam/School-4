@@ -1,5 +1,17 @@
 <template>
-  <div>Contact</div>
+  <div class="section-first">
+		<div class="container">
+			<div class="line"></div>
+			<div class="text">Bog'lanish</div>
+			<div class="line"></div>
+		</div>
+	</div>
+  <div class="section-second">
+		<div class="container">
+			<div class="map"></div>
+			<div class="adress"></div>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -11,5 +23,48 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	
+	.section-first {
+		width: 100%;
+		margin: 60px 0;
+
+		.container {
+			width: 1200px;
+			display: flex;
+			align-items: center;
+			margin: auto;
+			justify-content: space-between;
+
+			.line {
+				width: 425px;
+				border: 2px solid #111F50;
+				height: 0;
+			}
+
+			.text {
+				font-weight: 400;
+				font-size: 40px;
+				color: #111F50;
+			}
+		}
+	}
+
+	.section-second {
+
+		.container {
+			width: 1200px;
+			display: flex;
+			justify-content: space-between;
+			margin: auto;
+
+			.map {
+				width: 600px;
+				height: 450px;
+			}
+
+			.adress {
+				width: 400px;
+				height: 450px;
+			}
+		}
+	}
 </style>

@@ -28,11 +28,13 @@ export default {
 		margin: 60px 0;
 
 		.container {
-			width: 1200px;
+			max-width: 1200px;
 			display: flex;
 			align-items: center;
 			margin: auto;
 			justify-content: space-between;
+			padding: 0 15px;
+			box-sizing: content-box;
 
 			.line {
 				width: 425px;
@@ -44,6 +46,7 @@ export default {
 				font-weight: 400;
 				font-size: 40px;
 				color: #111F50;
+				margin: 0 30px;
 			}
 		}
 	}
@@ -51,7 +54,7 @@ export default {
 	.section-second {
 
 		.container {
-			width: 1200px;
+			max-width: 1200px;
 			display: flex;
 			justify-content: space-between;
 			margin: auto;

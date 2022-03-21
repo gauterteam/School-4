@@ -23,7 +23,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-	border: red solid 1px;
+	// border: red solid 1px;
 	font-family: 'Roboto', sans-serif;
 	user-select: none;
 }

@@ -42,21 +42,21 @@
 				<ul v-show="!mobile" class="navigation">
 					<li>
 						<router-link
-						v-bind:class="{ active: isActive[0] }" 
+						v-bind:class="{ active: isActive[0] }"
 						@click="handleClick(0)"
 						to="/"><span>Bosh Sahifa</span></router-link>
 					</li>
 					<li>
 						<router-link
 						v-bind:class="{ active: isActive[1] }"
-						@click="handleClick(1)" 
+						@click="handleClick(1)"
 						to="/about"><span></span>Biz Haqimizda</router-link>
 					</li>
 					<li>
 						<router-link
 						v-bind:class="{ active: isActive[2] }"
 						@click="handleClick(2)"
-						to="/about"><span></span>Yangiliklar</router-link>
+						to="/news"><span></span>Yangiliklar</router-link>
 					</li>
 					<li>
 						<router-link
@@ -65,13 +65,13 @@
 						to="/student"><span></span>Talabalar</router-link>
 					</li>
 					<li>
-						<router-link 
+						<router-link
 						v-bind:class="{ active: isActive[4] }"
 						@click="handleClick(4)"
 						to="/teacher"><span></span>O'qutuvchilar</router-link>
 					</li>
 					<li>
-						<router-link 
+						<router-link
 						v-bind:class="{ active: isActive[5] }"
 						@click="handleClick(5)"
 						to="/contact"><span></span>Bog'lanish</router-link>
@@ -87,37 +87,37 @@
 				<ul v-show="mobileNav" class="dropdawn-nav">
 					<li>
 						<router-link class="link"
-						v-bind:class="{ active: isActive[0] }" 
+						v-bind:class="{ active: isActive[0] }"
 						@click="handleClick(0)"
 						to="/">Bosh Sahifa</router-link>
 					</li>
 					<li>
 						<router-link class="link"
-						v-bind:class="{ active: isActive[1] }" 
+						v-bind:class="{ active: isActive[1] }"
 						@click="handleClick(1)"
 						to="/about">Biz Haqimizda</router-link>
 					</li>
 					<li>
-						<router-link class="link" 
-						v-bind:class="{ active: isActive[2] }" 
+						<router-link class="link"
+						v-bind:class="{ active: isActive[2] }"
 						@click="handleClick(2)"
 						to="/teacher">Yangiliklar</router-link>
 					</li>
 					<li>
-						<router-link class="link" 
-						v-bind:class="{ active: isActive[3] }" 
+						<router-link class="link"
+						v-bind:class="{ active: isActive[3] }"
 						@click="handleClick(3)"
 						to="/student">Talabalar</router-link>
 					</li>
 					<li>
-						<router-link class="link" 
-						v-bind:class="{ active: isActive[4] }" 
+						<router-link class="link"
+						v-bind:class="{ active: isActive[4] }"
 						@click="handleClick(4)"
 						to="/teacher">O'qutuvchilar</router-link>
 					</li>
 					<li>
-						<router-link class="link" 
-						v-bind:class="{ active: isActive[5] }" 
+						<router-link class="link"
+						v-bind:class="{ active: isActive[5] }"
 						@click="handleClick(5)"
 						to="/contact">Aloqa</router-link>
 					</li>
@@ -213,7 +213,7 @@ export default {
 					@media (max-width: 1200px) {
 						transform: scale(80%);
 					}
-					
+
 				}
 
 				.text {
@@ -341,7 +341,7 @@ export default {
 						}
 					}
 				}
-				
+
 			}
 
 			.box-social {
@@ -388,7 +388,7 @@ export default {
 					width: 25px;
 					height: 25px;
 					background: url(../assets/Instagram.svg) center / cover no-repeat;
-					
+
 					@media (max-width: 1200px) {
 						width: 20px;
 						height: 20px;
@@ -415,7 +415,7 @@ export default {
 		}
 
 		.container {
-			
+
 			@media (max-width: 1200px) {
 				width: 1000px;
 			}
@@ -431,7 +431,7 @@ export default {
 					width: 70px;
 					height: 70px;
 					background: url(../assets/logo.png) center / cover no-repeat;
-					
+
 					@media (max-width: 1200px) {
 						width: 60px;
 						height: 60px;
@@ -467,7 +467,7 @@ export default {
 						margin-left: 50px;
 						font-size: 14px;
 						padding: 10px 0px;
-						
+
 						@media (max-width: 1200px) {
 							margin-left: 35px;
 							font-size: 12px;
@@ -534,7 +534,7 @@ export default {
 						a.active span:before {
 							height: 100%
 						}
-						
+
 
 					}
 
@@ -550,7 +550,7 @@ export default {
 					height: 24px;
 					transition: 0.8s ease all;
 
-					
+
 				}
 
 				.icon-active {
@@ -558,7 +558,7 @@ export default {
 				}
 			}
 
-			
+
 
 			.dropdawn-nav {
 				display: flex;
@@ -577,7 +577,7 @@ export default {
 					margin-left: 0;
 					margin-bottom: 30px;
 					font-size: 14px;
-					
+
 
 					.link {
 						list-style-type: none;
@@ -594,7 +594,7 @@ export default {
 						}
 					}
 
-					
+
 				}
 
 			}

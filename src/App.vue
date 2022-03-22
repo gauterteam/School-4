@@ -25,6 +25,7 @@ export default {
   box-sizing: border-box;
 	// border: red solid 1px;
 	font-family: 'Roboto', sans-serif;
+	// eslint-disable-next-line no-tabs
 	user-select: none;
 }
 </style>

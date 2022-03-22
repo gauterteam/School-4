@@ -40,6 +40,7 @@
 			</div>
 			<div class="navbar">
 				<ul v-show="!mobile" class="navigation">
+<<<<<<< HEAD
 					<li>
 						<router-link
 						v-bind:class="{ active: isActive[0] }"
@@ -75,6 +76,14 @@
 						v-bind:class="{ active: isActive[5] }"
 						@click="handleClick(5)"
 						to="/contact"><span></span>Bog'lanish</router-link>
+=======
+					<li v-for="(item, i) in items"
+						:key="i">
+						<router-link 
+						v-bind:class="{ active: i === isActive}"
+						@click="handleClick(i)"
+						:to="item.route"><span>{{ item.message }}</span></router-link>
+>>>>>>> 72b2855af7067931bba34cbfadd5cd9875ec1be5
 					</li>
 				</ul>
 				<div @click="toggleMobileNav" v-show="mobile" class="burger" :class="{'icon-active': mobileNav}">
@@ -85,8 +94,10 @@
 			</div>
 			<transition name="mobile-nav">
 				<ul v-show="mobileNav" class="dropdawn-nav">
-					<li>
+					<li v-for="(item, i) in items"
+						:key="i">
 						<router-link class="link"
+<<<<<<< HEAD
 						v-bind:class="{ active: isActive[0] }"
 						@click="handleClick(0)"
 						to="/">Bosh Sahifa</router-link>
@@ -120,6 +131,11 @@
 						v-bind:class="{ active: isActive[5] }"
 						@click="handleClick(5)"
 						to="/contact">Aloqa</router-link>
+=======
+						v-bind:class="{ active: i === isActive}"
+						@click="handleClick(i)"
+						:to="item.route"><span>{{ item.message }}</span></router-link>
+>>>>>>> 72b2855af7067931bba34cbfadd5cd9875ec1be5
 					</li>
 				</ul>
 			</transition>
@@ -134,10 +150,18 @@ export default {
   components: {},
 	data () {
 		return {
-			isActive: [0, 0, 0, 0, 0],
+			isActive: [0],
 			mobile: 0,
 			mobileNav: 1,
 			windowWidth: null,
+			items: [
+				{ message: 'Bosh Sahifa', route: '/' }, 
+				{ message: 'Biz Haqimizda', route: '/about' }, 
+				{ message: 'Yangiliklar', route: '/news' }, 
+				{ message: 'Talabalar', route: '/student' }, 
+				{ message: "O'qutuvchilar", route: '/teacher' }, 
+				{ message: "Bog'lanish", route: '/contact' }
+			],
 		}
 	},
 	created () {
@@ -145,11 +169,13 @@ export default {
     this.updateWidth()
   },
 	methods: {
-    handleClick (numb) {
-			for (let index = 0; index < 6; index++) {
-				this.isActive[index] = 0
-			}
-			this.isActive[numb] = 1
+    handleClick (i) {
+			// for (let index = 0; index < 6; index++) {
+			// 	this.isActive[index] = 0
+			// }
+			// this.isActive[numb] = 1
+			// console.log(numb);
+			this.isActive = i
     },
 		updateWidth () {
       this.windowWidth = window.innerWidth
@@ -404,7 +430,7 @@ export default {
 
 	nav {
 		height: 90px;
-		background: rgba(255, 255, 255, 0.85);
+		background: rgba(240, 242, 247, 0.7);
 		// background: #fff;
 		display: flex;
 		justify-content: center;

@@ -29,7 +29,7 @@
 			</div>
 		</div>
 	</div>
-  <nav>
+<nav>
     <div class="container">
 			<div class="brand">
 				<div class="logo"></div>
@@ -66,7 +66,7 @@
 				</ul>
 			</transition>
 		</div>
-  </nav>
+</nav>
 </template>
 
 <script>
@@ -487,6 +487,14 @@ export default {
 							height: 100%
 						}
 
+<<<<<<< HEAD
+						.rtr-link:active a:before,
+						.rtr-link:active a span:after{
+							width: 100%
+						}
+						
+=======
+>>>>>>> d044fd62eeacdf7e7d6f0a098a5dec8ca80dff6b
 
 					}
 

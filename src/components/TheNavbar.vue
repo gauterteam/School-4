@@ -165,7 +165,7 @@ export default {
 					@media (max-width: 1200px) {
 						transform: scale(80%);
 					}
-					
+
 				}
 
 				.text {
@@ -293,7 +293,7 @@ export default {
 						}
 					}
 				}
-				
+
 			}
 
 			.box-social {
@@ -340,7 +340,7 @@ export default {
 					width: 25px;
 					height: 25px;
 					background: url(../assets/Instagram.svg) center / cover no-repeat;
-					
+
 					@media (max-width: 1200px) {
 						width: 20px;
 						height: 20px;
@@ -367,7 +367,7 @@ export default {
 		}
 
 		.container {
-			
+
 			@media (max-width: 1200px) {
 				width: 1000px;
 			}
@@ -383,7 +383,7 @@ export default {
 					width: 70px;
 					height: 70px;
 					background: url(../assets/logo.png) center / cover no-repeat;
-					
+
 					@media (max-width: 1200px) {
 						width: 60px;
 						height: 60px;
@@ -419,7 +419,7 @@ export default {
 						margin-left: 50px;
 						font-size: 14px;
 						padding: 10px 0px;
-						
+
 						@media (max-width: 1200px) {
 							margin-left: 35px;
 							font-size: 12px;
@@ -486,7 +486,7 @@ export default {
 						a.active span:before {
 							height: 100%
 						}
-						
+
 
 					}
 
@@ -502,7 +502,7 @@ export default {
 					height: 24px;
 					transition: 0.8s ease all;
 
-					
+
 				}
 
 				.icon-active {
@@ -510,7 +510,7 @@ export default {
 				}
 			}
 
-			
+
 
 			.dropdawn-nav {
 				display: flex;
@@ -529,7 +529,7 @@ export default {
 					margin-left: 0;
 					margin-bottom: 30px;
 					font-size: 14px;
-					
+
 
 					.link {
 						list-style-type: none;
@@ -546,7 +546,7 @@ export default {
 						}
 					}
 
-					
+
 				}
 
 			}

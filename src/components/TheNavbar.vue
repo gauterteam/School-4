@@ -42,13 +42,13 @@
 				<ul v-show="!mobile" class="navigation">
 					<li>
 						<router-link
-						v-bind:class="{ active: isActive[0] }" 
+						class="rtr-link"
 						@click="handleClick(0)"
 						to="/"><span>Bosh Sahifa</span></router-link>
 					</li>
 					<li>
 						<router-link
-						v-bind:class="{ active: isActive[1] }"
+						class="rtr-link"
 						@click="handleClick(1)" 
 						to="/about"><span></span>Biz Haqimizda</router-link>
 					</li>
@@ -533,6 +533,11 @@ export default {
 						a.active:after,
 						a.active span:before {
 							height: 100%
+						}
+
+						.rtr-link:active a:before,
+						.rtr-link:active a span:after{
+							width: 100%
 						}
 						
 

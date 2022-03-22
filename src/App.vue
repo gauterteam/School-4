@@ -1,16 +1,18 @@
 <template>
   <TheNavbar />
   <router-view/>
+	<Map />
   <TheFooter />
 </template>
 
 <script>
 import TheNavbar from './components/TheNavbar.vue'
 import TheFooter from './components/TheFooter.vue'
+import Map from './components/Map.vue'
 
 export default {
   name: 'App',
-  components: { TheNavbar, TheFooter }
+  components: { TheNavbar, TheFooter, Map }
 }
 </script>
 
@@ -25,6 +27,7 @@ export default {
   box-sizing: border-box;
 	// border: red solid 1px;
 	font-family: 'Roboto', sans-serif;
+	// eslint-disable-next-line no-tabs
 	user-select: none;
 }
 </style>

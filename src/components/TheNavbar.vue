@@ -12,7 +12,7 @@
 				<div class="email"></div>
 				<div class="text">
 					<div class="title">Electron pochta</div>
-					<div class="subtitle">info@kasb-hunar-4.uz </div>
+					<div class="subtitle">info@kasb-hunar-4.uz</div>
 				</div>
 			</div>
 			<div class="box-phone">

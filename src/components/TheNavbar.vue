@@ -12,7 +12,7 @@
 				<div class="email"></div>
 				<div class="text">
 					<div class="title">Electron pochta</div>
-					<div class="subtitle">info@kasb-hunar-4.uz </div>
+					<div class="subtitle">info@kasb-hunar-4.uz</div>
 				</div>
 			</div>
 			<div class="box-phone">
@@ -491,8 +491,19 @@ export default {
 						.rtr-link:active a span:after{
 							width: 100%
 						}
+<<<<<<< HEAD
 						
 
+=======
+					}
+
+					li:nth-child(1) {
+						margin-left: 0px;
+					}
+
+
+				}
+>>>>>>> 1a661674efa2da061600d1f2e52dd0b5ab913c60
 
 				.burger {
 					width: 24px;

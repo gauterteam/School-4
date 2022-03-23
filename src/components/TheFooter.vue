@@ -52,8 +52,8 @@ export default {
 		height: 420px;
 		background: rgba(17, 31, 80, 0.8);;
 		color: white;
-		position: absolute;
-		bottom: -420px;
+		left: 0;
+		bottom: 0;
 		z-index: -1;
 		display: flex;
 		justify-content: center;

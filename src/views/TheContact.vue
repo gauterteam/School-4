@@ -1,18 +1,13 @@
 <template>
-<<<<<<< HEAD
-  <div>Contact</div>
-  <fa :icon=" ['fab', 'facebook'] "/>
-  <fa :icon=" ['fab', 'telegram'] "/>
-  <fa :icon=" ['fab', 'instagram'] "/>
-=======
-  <div class="section-first">
+<div>Contact</div>
+	<div class="section-first">
 		<div class="container">
 			<div class="line"></div>
 			<div class="text">Bog'lanish</div>
 			<div class="line"></div>
 		</div>
 	</div>
-  <div class="section-second">
+	<div class="section-second">
 		<div class="container">
 			<div class="map">
 				<GmapMap
@@ -24,14 +19,13 @@
 			<div class="adress"></div>
 		</div>
 	</div>
->>>>>>> 72b2855af7067931bba34cbfadd5cd9875ec1be5
 </template>
 
 <script>
 
 export default {
-  name: 'TheContact',
-  components: {}
+name: 'TheContact',
+components: {}
 }
 </script>
 

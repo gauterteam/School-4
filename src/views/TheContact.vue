@@ -1,10 +1,5 @@
 <template>
-<<<<<<< HEAD
-<div>Contact</div>
-	<div class="section-first">
-=======
   <div class="section-first">
->>>>>>> 1a661674efa2da061600d1f2e52dd0b5ab913c60
 		<div class="container">
 			<div class="line"></div>
 			<div class="text">Bog'lanish</div>

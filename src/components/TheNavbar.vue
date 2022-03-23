@@ -491,10 +491,6 @@ export default {
 						.rtr-link:active a span:after{
 							width: 100%
 						}
-<<<<<<< HEAD
-						
-
-=======
 					}
 
 					li:nth-child(1) {
@@ -503,7 +499,6 @@ export default {
 
 
 				}
->>>>>>> 1a661674efa2da061600d1f2e52dd0b5ab913c60
 
 				.burger {
 					width: 24px;
@@ -558,8 +553,6 @@ export default {
 				}
 
 			}
-		}
-	}
 		}
 	}
 </style>

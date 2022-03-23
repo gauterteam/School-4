@@ -55,9 +55,6 @@ export default {
 		left: 0;
 		bottom: 0;
 		z-index: -1;
-		// position: absolute;
-		// bottom: -420px;
-		// z-index: -1;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -155,8 +152,5 @@ export default {
 				font-weight: 400;
 			}
 		}
-
-		
-		
 	}
 </style>

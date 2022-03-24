@@ -7,8 +7,9 @@
 
             <div class="card">
                 <img src="../assets/image-6.png" >
-                <p class="sub1">O‘quvchi qizlarning kasb-hunarga o‘rgatish maqsadida tashkil etilgan to‘garak jarayoni</p>
-                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida o‘quvchi qizlarning kasb-hunarga ...</p>
+                <p class="sub1">Avtomobillar tuzulishi xonasida o’quv amaliyot dars mashg’uloti </p>
+                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida avtomobillar tuzulishidan o’quv amaliyot ...</p>
+                <br>
                 <div>
                     <div class="data">16-03-2022 | 18:23</div>
                     <a class="btn">Batafsil</a>
@@ -26,8 +27,8 @@
 
             <div class="card">
                 <img src="../assets/image-8.png" alt="">
-                <p class="sub1">O‘quvchi qizlarning kasb-hunarga o‘rgatish maqsadida tashkil etilgan to‘garak jarayoni</p>
-                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida o‘quvchi qizlarning kasb-hunarga ...</p>
+                <p class="sub1">O’quvchilar darsdan so’ng kutubxonadan foydalanib bilimlarini oshirishmoqda</p>
+                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida o’quvchilar darsdan so’ng kutubxonadan ...</p>
                 <div>
                     <div class="data">16-03-2022 | 18:23</div>
                     <a class="btn">Batafsil</a>
@@ -36,8 +37,8 @@
 
             <div class="card">
                 <img src="../assets/image-9.png" >
-                <p class="sub1">O‘quvchi qizlarning kasb-hunarga o‘rgatish maqsadida tashkil etilgan to‘garak jarayoni</p>
-                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida o‘quvchi qizlarning kasb-hunarga ...</p>
+                <p class="sub1">Yo’l xarakat qoidasi to’garak mashguloti</p>
+                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida o‘quvchilarga yo’l harakati tog’aragi ...</p>
                 <div>
                     <div class="data">16-03-2022 | 18:23</div>
                     <a class="btn">Batafsil</a>
@@ -46,8 +47,8 @@
 
             <div class="card">
                 <img src="../assets/image-10.png" alt="">
-                <p class="sub1">O‘quvchi qizlarning kasb-hunarga o‘rgatish maqsadida tashkil etilgan to‘garak jarayoni</p>
-                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida o‘quvchi qizlarning kasb-hunarga ...</p>
+                <p class="sub1">Payvandlash (elektrogaz payvandlash) kasbiy to’garak mashg’ uloti.</p>
+                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida o‘quvchilarga payvandlash to’garaklari ...</p>
                 <div>
                     <div class="data">16-03-2022 | 18:23</div>
                     <a class="btn">Batafsil</a>
@@ -56,8 +57,8 @@
 
             <div class="card">
                 <img src="../assets/image-11.png" alt="">
-                <p class="sub1">O‘quvchi qizlarning kasb-hunarga o‘rgatish maqsadida tashkil etilgan to‘garak jarayoni</p>
-                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida o‘quvchi qizlarning kasb-hunarga ...</p>
+                <p class="sub1">Kon ishi asoslari fan to’garaklari olib borilmoqda.</p>
+                <p class="sub2">Denov tuman 4-son kasb-hunar maktabida kon ishi asoslari fan to’garaklari olib  ...</p>
                 <div class="date_btn">
                     <div class="data">16-03-2022 | 18:23</div>
                     <a class="btn">Batafsil</a>
@@ -139,7 +140,8 @@ export default {
 
 .cards .card img{
     border-radius: 20px 20px 0 0;
-    width: 340px;
+    width: 339px;
+    height: 200px;
 }
 
 .cards .card div{

@@ -78,7 +78,7 @@ export default {
 		return {
 			isActive: [0],
 			mobile: 0,
-			mobileNav: 1,
+			mobileNav: 0,
 			windowWidth: null,
 			items: [
 				{ message: 'Bosh Sahifa', route: '/' }, 

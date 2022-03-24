@@ -1,6 +1,5 @@
 <template>
-<div>Contact</div>
-    <div class="section-first">
+  <div class="section-first">
 		<div class="container">
 			<div class="line"></div>
 			<div class="text">Bog'lanish</div>

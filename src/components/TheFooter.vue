@@ -54,6 +54,7 @@ export default {
 		color: white;
 		left: 0;
 		bottom: 0;
+		display: flex;
 		justify-content: center;
 		align-items: center;
 

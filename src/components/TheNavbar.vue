@@ -339,7 +339,8 @@ export default {
 				.instagram {
 					width: 25px;
 					height: 25px;
-					background: url(../assets/Instagram.svg) center / cover no-repeat;
+					background: red;
+					background: url(../assets/instagram-thbl.png) center / cover no-repeat;
 
 					@media (max-width: 1200px) {
 						width: 20px;
@@ -347,7 +348,7 @@ export default {
 					}
 
 					&:hover {
-						background: url(../assets/InstagramOrg.svg) center / cover no-repeat;
+						background: url(../assets/Instagram-th.png) center / cover no-repeat;
 					}
 				}
 			}

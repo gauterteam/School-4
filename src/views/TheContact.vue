@@ -1,10 +1,6 @@
 <template>
-<<<<<<< HEAD
 <div>Contact</div>
-	<div class="section-first">
-=======
-  <div class="section-first">
->>>>>>> 1a661674efa2da061600d1f2e52dd0b5ab913c60
+    <div class="section-first">
 		<div class="container">
 			<div class="line"></div>
 			<div class="text">Bog'lanish</div>
@@ -14,11 +10,6 @@
 	<div class="section-second">
 		<div class="container">
 			<div class="map">
-				<GmapMap
-					:center="{lat:10, lng:10}"
-					:zoom="7"
-					style="width: 100%; height: 100%"
-				></GmapMap>
 			</div>
 			<div class="adress"></div>
 		</div>

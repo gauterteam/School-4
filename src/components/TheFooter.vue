@@ -52,16 +52,9 @@ export default {
 		height: 420px;
 		background: rgba(17, 31, 80, 0.8);;
 		color: white;
-<<<<<<< HEAD
 		left: 0;
 		bottom: 0;
-		z-index: -1;
-=======
-		// position: absolute;
-		// bottom: -420px;
-		// z-index: -1;
->>>>>>> 1a661674efa2da061600d1f2e52dd0b5ab913c60
-		display: flex;
+		z-index: -1;display: flex;
 		justify-content: center;
 		align-items: center;
 
